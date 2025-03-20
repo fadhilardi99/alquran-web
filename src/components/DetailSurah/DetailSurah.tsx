@@ -1,40 +1,40 @@
-// import type { Surah } from "../../types/surah";
-// // import DetailSurahInfo from "./DetailSurahInfo";
-// import AudioControl from "../AudioControl";
-// // import AyatList from "../Ayat/AyatList";
+import type { Surah } from "../../types/surah";
+import DetailSurahInfo from "../DetailSurah/DetailSurahInfo";
+import AudioControl from "../AudioControl";
+import AyatList from "../Ayat/AyatList";
 
-// type DetailSurahProps = {
-//   surah: Surah;
-//   currentReciter: string;
-//   changeReciter: (reciterId: string) => void;
-//   onPlay: () => void;
-//   onPause: () => void;
-//   audioPlaying: boolean;
-// };
+type DetailSurahProps = {
+  surah: Surah;
+  currentReciter: string;
+  changeReciter: (reciterId: string) => void;
+  onPlay: () => void;
+  onPause: () => void;
+  audioPlaying: boolean;
+};
 
-// function DetailSurah({
-//   //   surah,
-//   currentReciter,
-//   changeReciter,
-//   onPlay,
-//   onPause,
-//   audioPlaying,
-// }: DetailSurahProps) {
-//   return (
-//     <div className="py-8 px-5 flex flex-col gap-5">
-//       {/* <DetailSurahInfo surah={surah} /> */}
+function DetailSurah({
+  surah,
+  currentReciter,
+  changeReciter,
+  onPlay,
+  onPause,
+  audioPlaying,
+}: DetailSurahProps) {
+  return (
+    <div className="py-5 px-5 flex flex-col gap-5">
+      <DetailSurahInfo surah={surah} />
 
-//       <AudioControl
-//         currentReciter={currentReciter}
-//         changeReciter={changeReciter}
-//         onPlay={onPlay}
-//         onPause={onPause}
-//         audioPlaying={audioPlaying}
-//       />
+      <AudioControl
+        currentReciter={currentReciter}
+        changeReciter={changeReciter}
+        onPlay={onPlay}
+        onPause={onPause}
+        audioPlaying={audioPlaying}
+      />
 
-//       {/* <AyatList ayat={surah.ayat} /> */}
-//     </div>
-//   );
-// }
+      <AyatList ayat={surah.ayat} />
+    </div>
+  );
+}
 
-// export default DetailSurah;
+export default DetailSurah;

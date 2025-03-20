@@ -1,11 +1,11 @@
 import Hero from "../components/Hero";
-// import SurahContainer from "../components/Surah/SurahContainer";
+import SurahContainer from "../components/Surah/SurahContainer";
 
 function HomePage() {
   return (
     <>
       <Hero />
-      {/* <SurahContainer /> */}
+      <SurahContainer />
     </>
   );
 }

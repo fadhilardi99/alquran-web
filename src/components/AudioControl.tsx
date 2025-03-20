@@ -1,5 +1,7 @@
-import PlayIcon from "../assets/PlayIcon.svg";
-import PauseIcon from "../assets/PauseIcon.svg";
+import {
+  CgPlayButton as PlayIcon,
+  CgPlayPause as PauseIcon,
+} from "react-icons/cg";
 
 type AudioControlProps = {
   currentReciter: string;
@@ -43,9 +45,11 @@ function AudioControl({
         onClick={audioPlaying ? onPause : onPlay}
       >
         {audioPlaying ? (
-          <img src={PauseIcon} alt="Pause Icon" className="w-fit h-fit" />
+          // <img src={PauseIcon} alt="Pause Icon" className="w-fit h-fit" />
+          <PauseIcon className="w-10 h-10" />
         ) : (
-          <img src={PlayIcon} alt="Play Icon" className="w-fit h-fit" />
+          // <img src={PlayIcon} alt="Play Icon" className="w-fit h-fit" />
+          <PlayIcon className="w-10 h-10" />
         )}
       </div>
     </div>
