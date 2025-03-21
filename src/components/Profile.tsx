@@ -10,7 +10,7 @@ export function Profile({ greeting, name, avatar }: ProfileProps) {
         <p className=" text-light text-2xl">{greeting}</p>
         <p className="text-light text-xl font-bold">{name}</p>
       </div>
-      <img src={avatar} alt="Profile" className="w-10 h-10 rounded-full" />
+      <img src={avatar} alt="Profile" className="w-20 h-20 rounded-full" />
     </div>
   );
 }
