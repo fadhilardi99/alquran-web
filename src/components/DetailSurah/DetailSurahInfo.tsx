@@ -1,6 +1,6 @@
 import { CgChevronRight } from "react-icons/cg";
 import { Surah } from "../../types/surah";
-import React, { useState } from "react";
+import { useState } from "react";
 import DetailSurahInfoModal from "../DetailSurah/DetailSurahInfoModal";
 
 type DetailSurahInfoProps = {
