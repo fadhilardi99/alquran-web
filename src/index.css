@@ -18,6 +18,18 @@
   font-family: "Sora", sans-serif;
 }
 
+.dark {
+  --color-primary: #8a3dd2;
+  --color-secondary: #1e1e30;
+  --color-text: #e1e1e1;
+  --color-subtle: #a0a0a0;
+  --color-accent: #ff7532;
+  --color-light: #e1e1e1;
+  --color-dark: #0a0a1e;
+  --color-background: #121212;
+  --color-accent-light: rgba(100, 120, 180, 0.3);
+  --color-accent-light-purple: rgba(90, 110, 200, 0.5);
+}
 a {
   font-weight: 500;
   text-decoration: inherit;
